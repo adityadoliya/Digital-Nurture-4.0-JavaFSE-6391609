@@ -10,7 +10,7 @@ public class EvenCheckerTest {
     EvenChecker checker = new EvenChecker();
 
     @ParameterizedTest
-    @ValueSource(ints = {2, 4, 6, 8, 10, 0, -2, 6391608}) // multiple even numbers including part of your Superset ID
+    @ValueSource(ints = {2, 4, 6, 8, 10, 0, -2, 6391608}) // My superset id is not even i.e. 6391609
     void testIsEven(int input) {
         // Act & Assert
         assertTrue(checker.isEven(input), input + " should be even");
