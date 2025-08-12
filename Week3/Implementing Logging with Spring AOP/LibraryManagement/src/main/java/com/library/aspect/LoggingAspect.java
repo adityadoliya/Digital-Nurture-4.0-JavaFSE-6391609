@@ -11,7 +11,7 @@ public class LoggingAspect {
     public Object logExecutionTime(ProceedingJoinPoint joinPoint) throws Throwable {
         long start = System.currentTimeMillis();
 
-        Object result = joinPoint.proceed(); // Execute target method
+        Object result = joinPoint.proceed();
 
         long end = System.currentTimeMillis();
         System.out.println("[LOG] Method " + joinPoint.getSignature().getName()
